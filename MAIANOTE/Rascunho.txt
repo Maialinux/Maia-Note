@@ -1,0 +1,27 @@
+   fonts=list(font.families())
+    fonts.sort()
+    print(fonts)
+    posicaoFont=0
+
+    for item in fonts:
+        strPos= str (posicaoFont)
+        posicaoFont= posicaoFont+1
+
+        texto.tag_config(strPos, font=(item, 14))
+        texto.insert(END, item, strPos)
+        texto.insert(END,"\n")
+--------------------------------------------------------------
+
+def fEscolherCor():
+    global selecionado
+    if texto.selection_get():
+        selecionado = texto.selection_get()
+        cor = colorchooser.askcolor()
+        corHexadecimal = cor[1].upper()
+        if selecionado:
+            texto.tag_configure(str(selecionado), foreground=str(corHexadecimal))
+           #colore a ultima palavra
+            texto.tag_add(str(selecionado), "sel.first","sel.last")
+            #texto.tag_add(str(selecionado), 'insert-2c wordstart', 'end-2c')
+    else:
+        return 1

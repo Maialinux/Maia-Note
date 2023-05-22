@@ -1,0 +1,3 @@
+Editor de texto simples e leve feito em python3 + tkinter.
+
+Falta fazer a opção de escolher a fonte. Exemplo: Arial ou Impact.  
