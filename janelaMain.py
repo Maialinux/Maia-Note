@@ -17,7 +17,7 @@ class JanelaMain():
         self.root.title("Maia Note")
         #self.root.geometry("640x580")
         self.root.geometry("1280x720")
-        self.root.after(102000,self.AbrirEditor)
+        self.root.after(2000,self.AbrirEditor)
 
     
     def MenuPrincipal(self):
