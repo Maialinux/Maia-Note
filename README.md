@@ -27,7 +27,6 @@
 ## Coisas que faltam fazer:
 <p>
   
-### - Correção da visualização dos números
 ### - Implementar a função Imprimir
 ### - Corregir bugs que venham a surgir.
 
